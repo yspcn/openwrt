@@ -1,9 +1,9 @@
 name: Build-OpenWrt CI
 
 on:
-#  push:
-#    branches: 
-#      - master
+  push:
+    branches: 
+      - openwrt-ci
   schedule:
     - cron: 0 8 * * 5
 #  watch:
