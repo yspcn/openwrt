@@ -40,12 +40,12 @@ jobs:
         let make_process=$(nproc)+1
         make -j${make_process}
     - name: Upload Packages
-      uses: actions/upload-artifact@openwrt-ci
+      uses: actions/upload-artifact@master
       with:
         name: Packages
         path: bin/packages/
     - name: Upload Firmwares
-      uses: actions/upload-artifact@openwrt-ci
+      uses: actions/upload-artifact@master
       with:
         name: Firmwares
         path: bin/targets/
